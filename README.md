@@ -10,8 +10,6 @@ Human Verification Demo is a media-pipe face detection demo.
 
 
 ```bash
-.gitignore
-README.md
 app
    |-- src
    |   |-- main
@@ -103,9 +101,9 @@ Android Studio version : Android Studio Giraffe | 2022.3.1
 | androidx.core:core-ktx                           | 1.10.1         | Kotlin extensions library for Android that simplifies and enhances the use of core Android APIs.                                                                        |  
 | com.google.android.material:material             | 1.4.0          | library provided by Google that implements Material Design components                                                                                                   |
 | com.google.mediapipe:solution-core               | latest.release | google media pipe dependency.                                                                                                                                           |
-| com.google.mediapipe:facemesh                    | latest.release | mgoogle media pipe dependency.                                                                                                                                          | 
+| com.google.mediapipe:facemesh                    | latest.release | google media pipe dependency.                                                                                                                                           | 
 | com.google.flogger:flogger                       | 0.6            | logging library provided by Google                                                                                                                                      |
-| com.google.flogger:flogger-system-backend        | 0.6            | ogging library provided by Google                                                                                                                                       |
+| com.google.flogger:flogger-system-backend        | 0.6            | logging library provided by Google                                                                                                                                      |
 | androidx.camera:camera-core                      | 1.0.0-beta10   | provides the core functionalities and abstractions for working with the camera                                                                                          |
 | androidx.camera:camera-camera2                   | 1.0.0-beta10   | low-level Android camera package that replaces the deprecated Camera class                                                                                              |
 | androidx.camera:camera-lifecycle                 | 1.0.0-beta10   | module integrates CameraX with the Android Lifecycle library,                                                                                                           |
