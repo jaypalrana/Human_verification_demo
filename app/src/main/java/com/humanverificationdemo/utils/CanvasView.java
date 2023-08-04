@@ -40,16 +40,12 @@ public class CanvasView extends View {
             return;
         }
         canvas.drawCircle(x, y, radius, paint);
-//        canvas.drawText(text, x - 100, y - 25, paint);
-//        drawString(text, x - 200, y + 90, paint, canvas);
         drawString(text, x - 200, y + 90, paint, canvas);
-//        canvas.drawLine(0f, SharedPrefsUtils.INSTANCE.getWidth()/2, x,y,paint);
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-//        setMeasuredDimension(SharedPrefsUtils.INSTANCE.getWidth(), SharedPrefsUtils.INSTANCE.getHeight());
     }
 
     boolean isFirstTime = true;

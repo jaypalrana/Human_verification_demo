@@ -73,7 +73,6 @@ class MainActivity : BaseActivity<ActivityMainBinding,MainActivityViewModel>() {
     // consumed by {@link FrameProcessor} and the underlying MediaPipe graph.
     var converter: ExternalTextureConverter? = null
 
-    //   open lateinit var binding: ActivityMainBinding
 
     var eyesBlinkDone = false
     var isFaceDetected = false
@@ -145,8 +144,6 @@ class MainActivity : BaseActivity<ActivityMainBinding,MainActivityViewModel>() {
                     val landmarks = NormalizedLandmarkList.parseFrom(landmarksRaw)
 
 
-                    /*Logger.v("Test-->", "Landmarks count: ${landmarks.landmarkCount}")*/
-
                     var leftIrisLandmarks = ArrayList<LandmarkProto.NormalizedLandmark>()
                     leftIrisLandmarks.add(landmarks.getLandmark(468)) // center
                     leftIrisLandmarks.add(landmarks.getLandmark(470)) // top
@@ -165,8 +162,6 @@ class MainActivity : BaseActivity<ActivityMainBinding,MainActivityViewModel>() {
                     var left_iris_size = calculateIrisDiameter(leftIrisLandmarks)
                     var right_iris_size = calculateIrisDiameter(rightIrisLandMarks)
 
-
-                    /*Logger.v("Test-->", "DiaMeter left:$left_iris_size  right:$right_iris_size")*/
 
                     var leftEyeDepth: Float = getDepthOfEye(landmarks.getLandmark(468), left_iris_size)
 
@@ -544,7 +539,6 @@ class MainActivity : BaseActivity<ActivityMainBinding,MainActivityViewModel>() {
                     getViewBinding().tvFaceDetectionMsg.text =
                         "Please set your complete face inside the frame."
                     getViewBinding().tvFaceDetection.text = "Please align your face in center of frame"
-//                    virateDevice()
                 }
             }
             3 -> {
@@ -605,14 +599,7 @@ class MainActivity : BaseActivity<ActivityMainBinding,MainActivityViewModel>() {
 
                 getViewBinding().progressBar.progress = 100
                 Toast.makeText(applicationContext,"Face Detected Successfully",Toast.LENGTH_LONG).show()
-               /* activityScope.launch {
-                    delay(100)
-                    var intent =
-                        Intent(this@MainActivity, RingoCameraActivity::class.java)
-                    startActivity(intent)
-                    finish()
-                }*/
-//                takePicture()
+
             }
         }
     }
@@ -650,11 +637,6 @@ class MainActivity : BaseActivity<ActivityMainBinding,MainActivityViewModel>() {
         previewDisplayView = SurfaceView(this)
         setupPreviewDisplayView()
 
-        // Initialize asset manager so that MediaPipe native libraries can access the app assets, e.g.,
-        // binary graphs.
-
-        // Initialize asset manager so that MediaPipe native libraries can access the app assets, e.g.,
-        // binary graphs.
     }
 
     protected open fun cameraTargetResolution(): Size? {
@@ -702,9 +684,6 @@ class MainActivity : BaseActivity<ActivityMainBinding,MainActivityViewModel>() {
 
         Logger.v("Test-->", "size:$displaySize")
         Logger.v("Test-->", "size:$viewSize")
-
-        /*this.width = width
-        this.height = height*/
 
         this.surfaceWidth = width
         this.surfaceHeight = height
