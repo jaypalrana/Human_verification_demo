@@ -70,7 +70,7 @@ The folder structure of this app is explained below:
 | app/src/res/drawable-xxxhdpi                           | App icons and Images and Drawable files                  |
 | app/src/res/drawable-v24                               | App icons and Images and Drawable files                  |
 | app/src/res/drawable                                   | App icons and Images and Drawable files                  |
-| app/src/res/layout                                     | Layout Files for Round shape watch                       |
+| app/src/res/layout                                     | Layout Files                                             |
 | app/src/res/mipmap-anydpi-v26                          | Launcher App icon                                        |
 | app/src/res/mipmap-hdpi                                | Launcher App icon                                        |
 | app/src/res/mipmap-mdpi                                | Launcher App icon                                        |
