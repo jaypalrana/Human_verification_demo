@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Human Verification Demo</string>
+    <string name="scanning">scanning...</string>
+</resources>

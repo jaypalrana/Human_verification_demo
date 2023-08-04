@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">@color/light_orange</color>
+    <color name="purple_500">@color/light_orange</color>
+    <color name="purple_700">@color/light_orange</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brown">#A27D62</color>
+    <color name="dark_grey">#A9A9A9</color>
+
+    <color name="blue_grey_400">#78909C</color>
+    <color name="light_grey_400">#E6E6E6</color>
+    <color name="light_green_700">#689F38</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="blue">#4286f4</color>
+    <color name="red">#f44242</color>
+    <color name="light_orange">#A27D61</color>
+    <color name="orange_shade_55">#8CA27D61</color>
+    <color name="light_grey">#787D84</color>
+    <color name="bg_edittext">#F6F6F6</color>
+    <color name="border_edittext">#E3E3E3</color>
+    <color name="light_black">#6D6D6D</color>
+
+    <color name="purewhite">#FFFFFF</color>
+    <color name="purered">#FF0000</color>
+    <color name="puregreen">#00FF00</color>
+    <color name="pureblue">#0000FF</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="progressBarLightBackground">#E4D9D4</color>
+
+
+    <color name="colorPrimary">#080908</color>
+    <color name="colorPrimaryDark">#030303</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="magenta">#D81B60</color>
+    <!--    <color name="colorAccent">#D81B60</color>-->
+    <color name="yellow">#F7EA09</color>
+    <color name="matte">#0A0A0A</color>
+    <color name="frame_colour">#0E0D0D</color>
+    <color name="control_background">#cc4285f4</color>
+    <color name="green">#13c10e</color>
+    <color name="orange">#ed6800</color>
+</resources>
